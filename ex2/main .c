@@ -6,7 +6,6 @@
 int main()
 {
     FILE* fp;
-    long pos;
     
     int a[] = {0, 1, 2};
     char b[] = "abc";
