@@ -73,10 +73,8 @@ class TicTacToe {
                        cin.clear();
                        cin.ignore();
                     }
-                    if (round_player1)
-                        cout << "==> Invalid value, please enter again\n==> Player 1 (X), enter a number:";
-                    else
-                        cout << "==> Invalid value, please enter again\n==> Player 2 (O), enter a number:";
+                    cout << "==> Invalid value, please enter again\n";
+                    (round_player1) ? cout << "==> Player 1 (X), enter a number:" : cout << "==> Player 2 (O), enter a number:";
                     cin >> input;
                 }
                 (round_player1) ? state[input-1] = 'X' : state[input-1] = 'O';
