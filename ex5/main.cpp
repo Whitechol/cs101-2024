@@ -22,7 +22,11 @@ class ReadClass {
                 }
             }
             cout << count << " class in main.cpp\n";
-            cout << class_name[0] << endl;
+            int i = 0;
+            while (!class_name[i].empty()) {
+                cout << class_name[i] << endl;
+                i++;
+            }
         }
 };
 
